@@ -1,0 +1,265 @@
+/* Container for the grid of restaurants */
+.restaurant-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px; /* Spacing between the grid items */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Styling for the individual restaurant card */
+.restaurant-card {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Hover effect for restaurant card */
+.restaurant-card:hover {
+    box-shadow: 0 4px 80px rgba(0, 0, 0, 0.1);
+}
+
+/* Restaurant image styling */
+.restaurant-image {
+    width: 100%;
+    height: 150px;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+/* Restaurant name styling */
+.restaurant-card h3 {
+    font-size: 1.3em;
+    color: #333;
+    margin: 10px 0;
+}
+
+/* Restaurant cuisines and location styling */
+.restaurant-card p {
+    font-size: 1em;
+    color: #666;
+    margin: 5px 0;
+}
+
+/* View details link styling */
+.view-details-link {
+    margin-top: auto;
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+}
+
+.view-details-link:hover {
+    background-color: #0056b3;
+}
+
+/* Loader message styling */
+h4 {
+    text-align: center;
+    font-size: 1.2em;
+    color: #999;
+}
+
+/* End message styling */
+p {
+    text-align: center;
+    color: #999;
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+/* Center and style the image upload form */
+.image-upload-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+    max-width: 400px;
+    text-align: center;
+}
+
+.image-input {
+    padding: 10px;
+    border: 2px dashed #888;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.image-input:hover {
+    border-color: #007bff;
+}
+
+/* Image preview styling */
+.image-preview {
+    max-width: 100%;
+    max-height: 200px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Upload button */
+.upload-button {
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.upload-button:hover {
+    background-color: #218838;
+}
+
+/* Status messages */
+.status-container {
+    margin-top: 10px;
+}
+
+.uploading-bar {
+    font-size: 1em;
+    color: #007bff;
+}
+
+.recognized-cuisine {
+    font-size: 1.2em;
+    color: #28a745;
+    margin-top: 10px;
+}
+
+/* Add background image and center the search bar */
+.search-form {
+    background-image: url('../food.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    padding-top: 100px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+}
+
+.search-input {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #000000a1;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 480px;
+    box-sizing: border-box;
+}
+
+.search-button {
+    position: relative;
+    margin-top: 50px;
+    display: inline-block;
+    background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
+    border: -1px black;
+    border-radius: 12px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: -apple-system, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 2.5;
+    outline: transparent;
+    padding: 0 1rem;
+    text-align: center;
+    text-decoration: none;
+    transition: box-shadow 0.2s ease-in-out;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+}
+
+.search-button:hover {
+    background-color: #e64a19;
+}
+
+/* Optional: Style the restaurant grid */
+.restaurant-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.restaurant-card {
+    background-color: #f8f8f8;
+    border: 1px solid rgba(185, 181, 181, 0.251); /* Updated border color */
+    border-radius: 30px;
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+    margin: 10px;
+}
+
+.restaurant-card:hover {
+    box-shadow: 0 8px 16px rgba(148, 136, 136, 0.801);
+}
+
+.restaurant-image {
+    width: 100%;
+    height: 200px;
+    border-radius: 30px;
+    object-fit: cover;
+}
+
+/* Style for the "View Details" button */
+.view-details-link {
+    display: inline-block;
+    background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
+    border: 0;
+    border-radius: 12px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: -apple-system, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 2.5;
+    outline: transparent;
+    padding: 0 1rem;
+    text-align: center;
+    text-decoration: none;
+    transition: box-shadow 0.2s ease-in-out;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+}
+
+.view-details-link:not([disabled]):focus {
+    box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5), -0.125rem -0.125rem 1rem rgba(239, 71, 101, 0.5), 0.125rem 0.125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+.view-details-link:not([disabled]):hover {
+    box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5), -0.125rem -0.125rem 1rem rgba(239, 71, 101, 0.5), 0.125rem 0.125rem 1rem rgba(255, 154, 90, 0.5);
+}

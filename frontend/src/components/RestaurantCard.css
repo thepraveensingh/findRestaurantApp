@@ -1,0 +1,28 @@
+.restaurant-card {
+    border: 1px solid #ddd;
+    border-radius: 60px;
+    padding: 16px;
+    margin: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: transform 0.2s;
+}
+
+.restaurant-card:hover {
+    transform: scale(1.02);
+}
+
+.card-content {
+    text-align: center;
+}
+
+.view-details-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.view-details-link:hover {
+    text-decoration: underline;
+}
